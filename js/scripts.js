@@ -20,3 +20,15 @@ Pizza.prototype.addPrice = function(){
       var size = $("input[name=size]:checked").val();
       var selectedPizza = $("input[name=pizzaChoice]:checked").val();
       var toppingArray = [];
+      $("#t:checked").each(function(){
+        toppingArray.push($(this).val());
+        console.log(toppingArray)
+      })
+      var myPizza = new Pizza (toppingArray, size, selectedPizza)
+      myPizza.addPrice()
+      $("#cart").text(myPizza.type)
+      $("#total").text(myPizza.cost)
+      console.log(myPizza)
+    })
+  })
+  

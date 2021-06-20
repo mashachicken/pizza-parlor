@@ -17,7 +17,7 @@ selections: Veggie, Cheese, Hawaiian.
 
 To check out my website, visit my GitHub page. Below I will attach a direct link to my repository
 
-* Open the terminal and enter "git clone https://github.com/mashachicken/pizza-project.git "
+* Open the terminal and enter "git clone https://github.com/mashachicken/pizza-parlor.git"
 * Press enter. Your local clone will be created
 * Open the index.html file in a browser of your choice
 * View the document

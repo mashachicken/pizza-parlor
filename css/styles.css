@@ -12,3 +12,21 @@ h2 {
   font-size: 27px;
   color:white;
 }
+
+#cheesePic {
+  height: 200px;
+  width: 200px;
+}
+.hawaiianBlock {
+  float: right;
+  margin-top: -49%;
+}
+
+.margheritaBlock {
+  float: right;
+  margin-top: -49%;
+}
+
+.veggieBlock {
+  margin-top: 5%;
+}

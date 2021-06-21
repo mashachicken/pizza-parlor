@@ -2,10 +2,10 @@ body {
   background-color: #fff47d;
   font-size: 14px;
   font-style: italic;
+  padding-left: 5%;
 }
 
 h2 {
-  margin-top: 0% !important;
   height: 50px;
   background-color: #ffa600;
   text-align: center;

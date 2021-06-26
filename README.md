@@ -7,11 +7,29 @@
 _A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost._
 
 ## Specs
-1. The program will let you choose a pizza variety.
-selections: Veggie, Cheese, Hawaiian.
-2. As soon as a user selects a pizza, he will be asked to select the size and add toppings.  
-3. User can then submit their selection by clicking an "Order" button.
-4. His total cost will then be calculated and shown on the right of the web-page.
+```
+Describe: Pizza.addPrice()
+Test: The program will return price value based on user's size selection
+Code: size === 'small'
+Expected Result: this.cost += 5;
+
+```
+Describe: Pizza()
+Test: The program will allow user to choose toppings 
+Code: const selectedTopping = $("#t:checked").val();
+Expected Output: selected topping = pinapple;
+
+```
+Describe: Pizza.addPrice()
+Test: The program will then calculate the total cost of pizza 
+Code: return this.cost;
+Expected Output: this.cost = 10
+
+```
+Describe: Pizza.addPrice()
+Test: Wil return a 'Pick a size' message if no size or topping is selected 
+Code: selectedTopping is undefined
+Expected Output: alert("pick a size")
 
 ## Setup/Installation Requirements
 

@@ -28,7 +28,7 @@ $(document).ready(function () {
     var size = $("input[name=size]:checked").val();
     var selectedPizza = $("input[name=pizzaChoice]:checked").val();
     var toppingArray = [];
-    $("#t:checked").each(function () {
+    $(".t:checked").each(function () {
       toppingArray.push($(this).val());
     })
     var myPizza = new Pizza(toppingArray, size, selectedPizza)

@@ -9,27 +9,47 @@ _A website for a pizza company where a user can choose one or more individual to
 ## Specs
 ```
 Describe: Pizza.addPrice()
-Test: The program will return price value based on user's size selection
-Code: size === 'small'
+Test: The program will calculate price value when small size is selected
+Code: selectedPizza.addPrice(); size === 'small'
 Expected Result: this.cost += 5;
 
 ```
+```
+Describe: Pizza.addPrice()
+Test: The program will calculate price value when large size is selected
+Code: selectedPizza.addPrice(); size === 'large'
+Expected Result: this.cost += 10;
+
+```
+```
+Describe: Pizza.addPrice()
+Test: The program will calculate price based on topping added
+Code: selectedPizza.addPrice(); this.topping === 'pinapple'
+Expected Result: this.cost += 1;
+
+```
+```
+Describe: Pizza.addPrice()
+Test: Wil return a 'Pick a size' message if no size or topping is selected 
+Code: selectedTopping is undefined
+Expected Output: alert("pick a size")
+```
+```
+
 Describe: Pizza()
 Test: The program will allow user to choose toppings 
 Code: const selectedTopping = $("#t:checked").val();
 Expected Output: selected topping = pinapple;
 
 ```
+```
 Describe: Pizza.addPrice()
 Test: The program will then calculate the total cost of pizza 
-Code: return this.cost;
+Code: selectedPizza.cost;
 Expected Output: this.cost = 10
 
 ```
-Describe: Pizza.addPrice()
-Test: Wil return a 'Pick a size' message if no size or topping is selected 
-Code: selectedTopping is undefined
-Expected Output: alert("pick a size")
+```
 
 ## Setup/Installation Requirements
 
